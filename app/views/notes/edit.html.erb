@@ -1,0 +1,9 @@
+<%= render partial: "partial/header"%>
+<body>
+<h1>Edit Note</h1>
+
+<div class="form-container"> 
+<%= render "form", note: @note %>
+<%= button_to "Home",notes_path ,method: :get %>  
+</div>
+</body>

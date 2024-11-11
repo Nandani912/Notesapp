@@ -1,0 +1,12 @@
+<body>
+<%= render partial: "partial/header"%>
+<div class ="form-container">
+<% @notes.each do |note|%>
+<li>
+<%= link_to note.title,note%>
+</li>
+<%end%>
+<%=button_to "Create Notes","/notes/new",method: :get %>
+
+  </div>
+  </body>
